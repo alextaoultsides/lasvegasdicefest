@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:lasvegasdice.xcodeproj">
+      location = "self:/Users/atao 1/Desktop/udemy/lasvegasdice/lasvegasdicefest.xcodeproj">
    </FileRef>
 </Workspace>
