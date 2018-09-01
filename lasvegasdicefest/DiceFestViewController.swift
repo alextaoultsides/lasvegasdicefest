@@ -15,7 +15,7 @@ class DiceFestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        diceImage()
+        showNewDice()
     }
     func randNum() -> Int {
         return Int.random(in: 1...6)
@@ -27,15 +27,20 @@ class DiceFestViewController: UIViewController {
         return UIImage(named: "dice\(num)")!
     }
     
-    func diceImage() {
+    func showNewDice() {
         diceImageView1.image = dicePicker()
         diceImageView2.image = dicePicker()
     }
     
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        showNewDice()
+    }
+    
     @IBAction func rollButton(_ sender: Any) {
-        diceImage()
+        showNewDice()
         
     }
+    
     
 }
 
